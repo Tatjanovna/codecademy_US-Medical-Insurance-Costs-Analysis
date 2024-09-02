@@ -1,0 +1,33 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                charges   R-squared:                       0.751
+Model:                            OLS   Adj. R-squared:                  0.750
+Method:                 Least Squares   F-statistic:                     445.5
+Date:                Mon, 02 Sep 2024   Prob (F-statistic):               0.00
+Time:                        17:18:09   Log-Likelihood:                -13547.
+No. Observations:                1338   AIC:                         2.711e+04
+Df Residuals:                    1328   BIC:                         2.717e+04
+Df Model:                           9                                         
+Covariance Type:            nonrobust                                         
+===============================================================================================
+                                  coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------
+const                       -1.204e+04    990.929    -12.146      0.000    -1.4e+04   -1.01e+04
+age                           257.1639     11.899     21.611      0.000     233.820     280.508
+bmi                           338.8486     28.596     11.850      0.000     282.751     394.946
+children                      555.4537    152.747      3.636      0.000     255.803     855.105
+smoker_binary                2.432e+04    568.583     42.777      0.000    2.32e+04    2.54e+04
+children_smoker_interaction  -427.1338    352.279     -1.212      0.226   -1118.217     263.950
+sex_male                     -118.6057    333.052     -0.356      0.722    -771.970     534.759
+region_northwest             -342.5488    476.269     -0.719      0.472   -1276.870     591.773
+region_southeast            -1039.9040    478.625     -2.173      0.030   -1978.847    -100.961
+region_southwest             -954.0768    477.874     -1.997      0.046   -1891.547     -16.607
+==============================================================================
+Omnibus:                      298.348   Durbin-Watson:                   2.086
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              708.660
+Skew:                           1.207   Prob(JB):                    1.31e-154
+Kurtosis:                       5.625   Cond. No.                         313.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
